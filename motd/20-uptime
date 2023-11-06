@@ -1,5 +1,0 @@
-#!/bin/bash
-# Taken from https://github.com/yboetz/motd
-
-printf "\n"
-uptime -p

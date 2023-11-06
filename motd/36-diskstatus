@@ -21,7 +21,7 @@ hddtemp_host=localhost
 hddtemp_port=7634
 
 # logfiles to check
-logfiles='/var/log/syslog /var/log/syslog.1'
+logfiles='/var/log/syslog'
 
 # get all lines with smartd entries from syslog
 lines=$(tac $logfiles | grep -hiP 'smartd\[[[:digit:]]+\]:' | grep -iP "previous self-test")

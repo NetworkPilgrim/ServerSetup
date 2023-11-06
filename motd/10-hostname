@@ -1,4 +1,4 @@
 #!/bin/bash
 # Taken from https://github.com/yboetz/motd
 
-/usr/bin/env figlet "$(hostname)" | /usr/bin/env lolcat -f
+figlet "$(hostname)" | lolcat -f
