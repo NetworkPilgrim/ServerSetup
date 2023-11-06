@@ -1,7 +1,7 @@
 #!/bin/bash
 # Taken from https://github.com/yboetz/motd
 
-command -v "fail2ban-client" &> /dev/null || exit 1
+command -v "fail2ban-client" &> /dev/null || exit 0
 
 # fail2ban-client status to get all jails, takes about ~70ms
 jails=($(fail2ban-client status | grep "Jail list:" | sed "s/ //g" | awk '{split($2,a,",");for(i in a) print a[i]}'))

@@ -2,7 +2,7 @@
 # Taken from https://github.com/yboetz/motd
 
 logfile='/var/log/fail2ban.log*'
-[ -f $logfile ] || exit 1
+[ -f $logfile ] || exit 0
 
 mapfile -t lines < <(grep -hioP '(\[[a-z-]+\]) ?(?:restore)? (ban|unban)' $logfile | sort | uniq -c)
 jails=($(printf -- '%s\n' "${lines[@]}" | grep -oP '\[\K[^\]]+' | sort | uniq))
