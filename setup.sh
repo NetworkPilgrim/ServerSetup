@@ -1,4 +1,4 @@
-curl https://github.com/NetworkPilgrim/ServerSetup/blob/master/.bashrc > ~/.bashrc
+curl https://raw.githubusercontent.com/NetworkPilgrim/ServerSetup/master/.bashrc > ~/.bashrc
 
 # Install the required dependencies for the motd 
 apt install -y figlet lolcat unzip smartmontools 
@@ -18,4 +18,4 @@ unzip -j ~/serversetup.zip "ServerSetup-master/motd/*" -d "/etc/update-motd.d/"
 rm ~/serversetup.zip
 
 #
-chmod -R o+rx /etc/update-motd.d/
+chmod -R +x /etc/update-motd.d/
