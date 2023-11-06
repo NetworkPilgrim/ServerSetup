@@ -9,7 +9,7 @@ curl -o /usr/local/bin/hddtemp-lt https://raw.githubusercontent.com/slowpeek/hdd
 curl -o ~/serversetup.zip https://codeload.github.com/NetworkPilgrim/ServerSetup/zip/refs/heads/master
 
 #
-unzip ~/serversetup.zip "motd/*" -d "/etc/update-motd.d/"
+unzip ~/serversetup.zip "ServerSetup-master/motd/*" -d "/etc/update-motd.d/"
 
 #
 chmod -R o+rx /etc/update-motd.d/
