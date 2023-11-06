@@ -1,9 +1,7 @@
 curl https://raw.githubusercontent.com/NetworkPilgrim/ServerSetup/master/.bashrc > ~/.bashrc
 
 # Install the required dependencies for the motd 
-apt install -y figlet lolcat unzip smartmontools 
-
-curl -o /usr/local/bin/hddtemp-lt https://raw.githubusercontent.com/slowpeek/hddtemp/master/hddtemp-lt
+apt install -y figlet lolcat unzip  
 
 # 
 curl -o ~/serversetup.zip https://codeload.github.com/NetworkPilgrim/ServerSetup/zip/refs/heads/master

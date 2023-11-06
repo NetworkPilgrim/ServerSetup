@@ -1,4 +1,5 @@
 #!/bin/bash
 # Taken from https://github.com/yboetz/motd
+clear
 
-figlet "$(hostname)" | lolcat -f
+figlet "$(hostname)" | /usr/games/lolcat -f
