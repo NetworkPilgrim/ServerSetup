@@ -1,5 +1,3 @@
-#!/bin/bash
-
 curl https://github.com/NetworkPilgrim/ServerSetup/blob/master/.bashrc > ~/.bashrc
 
 # Install the required dependencies for the motd 
